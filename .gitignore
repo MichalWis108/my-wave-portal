@@ -1,5 +1,5 @@
 node_modules
-secrect.env
+/my-wave-portal/secrect.env
 coverage
 coverage.json
 typechain
