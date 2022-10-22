@@ -1,5 +1,5 @@
 node_modules
-/secrects.env
+secrets.env
 coverage
 coverage.json
 typechain
