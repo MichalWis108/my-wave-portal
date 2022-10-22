@@ -27,7 +27,7 @@ contract WavePortal {
         console.log("We have %d total waves!", totalWaves);
         return totalWaves;
     }
-
+//comment
     function myTotalWaves() external view returns (uint256) {
         uint256 result = waveCount[msg.sender];
         console.log("Total waves by %s: %d", msg.sender, result);
