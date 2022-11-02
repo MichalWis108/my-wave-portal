@@ -6,10 +6,10 @@ const main = async () => {
   console.log("Account balance: ", accountBalance.toString());
 
   const waveContractFactory = await hre.ethers.getContractFactory("WavePortal");
-  const waveContract = await waveContractFactory.deploy();
-  await waveContract.deployed({
+  const waveContract = await waveContractFactory.deploy({
     value: hre.ethers.utils.parseEther("0.001"),
   });
+  await waveContract.deployed();
 
   await waveContract.deployed();
 
