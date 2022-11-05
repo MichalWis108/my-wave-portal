@@ -26,8 +26,8 @@ const main = async () => {
   let waveTxn = await waveContract.wave("A message!");
   await waveTxn.wait(); // Wait for the transaction to be mined
 
-  waveTxn = await waveContract.connect(randomPerson).wave("Another message!");
-  await waveTxn.wait(); // Wait for the transaction to be mined
+  let waveTxn2 = await waveContract.connect(randomPerson).wave("Another message!");
+  await waveTxn2.wait(); // Wait for the transaction to be mined
 
   contractBalance = await hre.ethers.provider.getBalance(waveContract.address);
   console.log(
