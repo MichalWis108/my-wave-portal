@@ -70,7 +70,7 @@ contract WavePortal {
         /*
          * Give a 50% chance that the user wins the prize.
          */
-        if (seed < 50) {
+        if (seed < 100) {
             console.log("%s won!", msg.sender);
 
             /*
